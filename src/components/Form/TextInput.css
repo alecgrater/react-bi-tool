@@ -1,0 +1,36 @@
+.text-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .text-input label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .text-input input {
+    padding: 0.5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .text-input input:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 0 2px #007aff;
+  }
+  
+  .text-input input::placeholder {
+    color: #999;
+  }
+  
+  .text-input input:-webkit-autofill {
+    box-shadow: 0 0 0 30px #f8f8f8 inset;
+    -webkit-text-fill-color: #333;
+  }
+  

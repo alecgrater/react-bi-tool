@@ -1,47 +1,46 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import './RegisterPage.css';
+import Form from '../../components/Form/Form';
+import TextInput from '../../components/Form/TextInput';
+import Button from '../../components/Button/Button';
+import { register } from '../../api/auth';
 
 const RegisterPage = () => {
+  const history = useHistory();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const history = useHistory();
+  const [error, setError] = useState('');
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-
-    // Perform registration logic here
-    // Example:
-    if (username && password) {
-      // Registration successful, navigate to dashboard
+    try {
+      await register(username, password);
       history.push('/dashboard');
-    } else {
-      alert('Please fill in all the fields');
+    } catch (err) {
+      setError('Failed to register. Please try again.');
     }
   };
 
   return (
-    <div className="register-page-container">
-      <h1 className="register-page-title">Register</h1>
-      <form className="register-page-form" onSubmit={handleRegister}>
-        <input
-          type="text"
-          className="register-page-input"
-          placeholder="Username"
+    <div className="register-page">
+      <h1>Register</h1>
+      <Form onSubmit={handleRegister}>
+        <TextInput
+          label="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          required
         />
-        <input
+        <TextInput
+          label="Password"
           type="password"
-          className="register-page-input"
-          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
-        <button type="submit" className="register-page-button">
-          Register
-        </button>
-      </form>
+        {error && <div className="error">{error}</div>}
+        <Button type="submit">Register</Button>
+      </Form>
     </div>
   );
 };

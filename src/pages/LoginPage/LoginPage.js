@@ -1,46 +1,46 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import './LoginPage.css';
+import Form from '../../components/Form/Form';
+import TextInput from '../../components/Form/TextInput';
+import Button from '../../components/Button/Button';
+import { login } from '../../api/auth';
 
 const LoginPage = () => {
+  const history = useHistory();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const history = useHistory();
+  const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-
-    // Perform login logic here
-    // Example:
-    if (username === 'admin' && password === 'password') {
+    try {
+      await login(username, password);
       history.push('/dashboard');
-    } else {
-      alert('Invalid username or password');
+    } catch (err) {
+      setError('Invalid username or password.');
     }
   };
 
   return (
-    <div className="login-page-container">
-      <h1 className="login-page-title">Login</h1>
-      <form className="login-page-form" onSubmit={handleLogin}>
-        <input
-          type="text"
-          className="login-page-input"
-          placeholder="Username"
+    <div className="login-page">
+      <h1>Login</h1>
+      <Form onSubmit={handleLogin}>
+        <TextInput
+          label="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          required
         />
-        <input
+        <TextInput
+          label="Password"
           type="password"
-          className="login-page-input"
-          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
-        <button type="submit" className="login-page-button">
-          Login
-        </button>
-      </form>
+        {error && <div className="error">{error}</div>}
+        <Button type="submit">Login</Button>
+      </Form>
     </div>
   );
 };

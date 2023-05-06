@@ -1,21 +1,28 @@
 import React from 'react';
-import Chart from '../Chart/Chart';
-import './dashboard.css';
+import Chart from '../../components/Chart/Chart';
+import Table from '../../components/Table/Table';
 
 const Dashboard = () => {
   const chartData = [
-    { name: 'January', value: 100 },
-    { name: 'February', value: 200 },
-    { name: 'March', value: 150 },
-    { name: 'April', value: 300 },
-    { name: 'May', value: 250 },
+    { d_activitymovemode: 'Walking', d_activitytype: 'Outdoor', d_automateddevicegroup: 'Fitness Tracker', d_autopausecount: 10, d_build: '1.2.3', d_isinternal: false },
+    { d_activitymovemode: 'Running', d_activitytype: 'Outdoor', d_automateddevicegroup: 'Smartwatch', d_autopausecount: 5, d_build: '2.0.1', d_isinternal: true },
+    { d_activitymovemode: 'Cycling', d_activitytype: 'Indoor', d_automateddevicegroup: 'Fitness Tracker', d_autopausecount: 3, d_build: '1.1.0', d_isinternal: false },
+    { d_activitymovemode: 'Swimming', d_activitytype: 'Water', d_automateddevicegroup: 'Smartwatch', d_autopausecount: 15, d_build: '2.3.2', d_isinternal: true },
+    { d_activitymovemode: 'Hiking', d_activitytype: 'Outdoor', d_automateddevicegroup: 'Fitness Tracker', d_autopausecount: 8, d_build: '1.4.5', d_isinternal: false },
   ];
 
   return (
-    <div className="dashboard-container">
-      <h2 className="dashboard-title">Dashboard</h2>
-      <div className="dashboard-chart">
-        <Chart data={chartData} />
+    <div>
+      <h1>Dashboard</h1>
+      <div className="panels">
+        <div className="panel">
+          <h2>Chart</h2>
+          <Chart data={chartData} />
+        </div>
+        <div className="panel">
+          <h2>Data Exploration</h2>
+          <Table data={chartData} />
+        </div>
       </div>
     </div>
   );
