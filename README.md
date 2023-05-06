@@ -28,7 +28,7 @@ To get the app up and running on your local machine, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:alecgrater/react-bi-tool.git
 ```
 
 2. Navigate to the project directory:
