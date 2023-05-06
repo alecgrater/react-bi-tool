@@ -1,0 +1,25 @@
+/* Filter.css */
+
+.filter-container {
+    font-family: 'San Francisco', Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .filter-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .filter-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter-input:focus {
+    outline: none;
+    border-color: #888;
+  }
+  

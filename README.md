@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Business Intelligence Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Business Intelligence Tool
 
-## Available Scripts
+The Business Intelligence (BI) Tool is a web application that provides a powerful and user-friendly interface for exploring and analyzing data from SQL databases. With intuitive filtering options and a variety of visualization capabilities, users can easily gain insights and make informed decisions based on their data.
 
-In the project directory, you can run:
+Features:
+- Connect to SQL databases and retrieve data for analysis
+- Apply custom filters to refine data based on specific criteria
+- Visualize data using various chart types, including bar graphs and line charts
+- Export data in different formats for further analysis or reporting
+- User authentication and login functionality to secure data access
+- Responsive design with a sleek and modern UI inspired by Apple's styling standards
 
-### `npm start`
+Whether you're a business analyst, data scientist, or decision-maker, the Business Intelligence Tool empowers you to extract meaningful insights from your data and drive data-driven decision-making.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Get started with the Business Intelligence Tool and unlock the potential of your data!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencies
+This project requires the following dependencies:
+- React: A JavaScript library for building user interfaces
+- React Router DOM: Routing library for React applications
+- Recharts: A charting library for React applications
 
-### `npm test`
+## Installation
+To get the app up and running on your local machine, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
 
-### `npm run build`
+2. Navigate to the project directory:
+```bash
+cd BI-TOOL
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies:
+```bash
+npm install react react-dom recharts react-router-dom
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to access the application.
 
-### `npm run eject`
+## Details
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Components
+Here are the key components of the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Component                   | Description                                     |
+| --------------------------- | ----------------------------------------------- |
+| Authentication              | Handles user authentication and login features   |
+| Button                      | Customizable button component                   |
+| Chart                       | Provides visualizations using Recharts library   |
+| DataExploration             | Allows users to explore and filter data         |
+| DataExport                  | Handles exporting data in various formats        |
+| DataSelector                | Provides options for selecting data             |
+| Filter                      | Implements filtering functionality              |
+| Notifications               | Displays notifications to the user              |
+| Table                       | Renders tabular data                            |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pages
+Here are the key pages of the application:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Page                        | Description                                     |
+| --------------------------- | ----------------------------------------------- |
+| DashboardPage               | Dashboard for visualizing data and insights     |
+| DataExplorerPage            | Enables data exploration and analysis           |
+| LoginPage                   | Handles user authentication and login           |
+| RegisterPage                | Allows new users to register for the application |
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

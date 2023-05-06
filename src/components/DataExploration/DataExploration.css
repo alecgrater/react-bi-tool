@@ -1,0 +1,20 @@
+/* DataExploration.css */
+
+.data-exploration-container {
+    font-family: 'San Francisco', Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .data-exploration-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .data-exploration-filters {
+    margin-bottom: 20px;
+  }
+  
+  .data-exploration-chart {
+    margin-bottom: 20px;
+  }

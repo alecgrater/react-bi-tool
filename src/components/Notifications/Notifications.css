@@ -1,0 +1,28 @@
+/* Notifications.css */
+
+.notifications-container {
+    font-family: 'San Francisco', Arial, sans-serif;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .notification {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .notification-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .notification-message {
+    font-size: 14px;
+    color: #666;
+  }
+  

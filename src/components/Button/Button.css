@@ -1,0 +1,17 @@
+/* Button.css */
+
+.apple-button {
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007AFF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .apple-button:hover {
+    background-color: #0056b3;
+  }
+  

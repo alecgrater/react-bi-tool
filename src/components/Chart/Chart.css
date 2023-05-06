@@ -1,0 +1,53 @@
+/* Chart.css */
+
+.chart-container {
+    font-family: 'San Francisco', Arial, sans-serif;
+    padding: 20px;
+    background-color: #F5F5F7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container .recharts-cartesian-grid-horizontal line {
+    stroke: rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container .recharts-cartesian-grid-vertical line {
+    stroke: rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container .recharts-cartesian-axis-tick-value {
+    fill: rgba(0, 0, 0, 0.7);
+  }
+  
+  .chart-container .recharts-legend-item-text {
+    fill: rgba(0, 0, 0, 0.7);
+  }
+  
+  .chart-container .recharts-tooltip {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  .chart-container .recharts-tooltip-label {
+    margin-bottom: 5px;
+  }
+  
+  .chart-container .recharts-tooltip-item {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .chart-container .recharts-tooltip-item-name {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .chart-container .recharts-tooltip-item-value {
+    font-weight: bold;
+  }
+  

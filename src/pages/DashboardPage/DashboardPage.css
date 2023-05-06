@@ -1,0 +1,31 @@
+.dashboard-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dashboard-page-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .dashboard-page-chart {
+    margin-right: 40px;
+    flex-basis: 50%;
+  }
+  
+  .dashboard-page-data-exploration {
+    flex-basis: 50%;
+  }
+  

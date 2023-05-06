@@ -1,0 +1,17 @@
+/* dashboard.css */
+
+.dashboard-container {
+    font-family: 'San Francisco', Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-chart {
+    margin-bottom: 20px;
+  }
+  
