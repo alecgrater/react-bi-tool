@@ -33,7 +33,7 @@ git clone git@github.com:alecgrater/react-bi-tool.git
 
 2. Navigate to the project directory:
 ```bash
-cd BI-TOOL
+cd react-bi-tool
 ```
 
 3. Install the dependencies:
