@@ -15,7 +15,6 @@ const mockData = [
       d_build: 'v1.0.3',
       d_isinternal: true,
     },
-    // Add more objects with different data
   ];
   
   export default mockData;
