@@ -11,17 +11,22 @@ const Dashboard = () => {
     { d_activitymovemode: 'Hiking', d_activitytype: 'Outdoor', d_automateddevicegroup: 'Fitness Tracker', d_autopausecount: 8, d_build: '1.4.5', d_isinternal: false },
   ];
 
+  const testDataset = [
+    { name: "alex", value: 200 },
+    { name: "bob", value: 100 },
+  ];
+
   return (
     <div>
       <h1>Dashboard</h1>
       <div className="panels">
         <div className="panel">
           <h2>Chart</h2>
-          <Chart data={chartData} />
+          <Chart d={testDataset} />
         </div>
         <div className="panel">
           <h2>Data Exploration</h2>
-          <Table data={chartData} />
+          <Table data={testDataset} />
         </div>
       </div>
     </div>
